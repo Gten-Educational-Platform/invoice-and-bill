@@ -4,9 +4,8 @@ import cors from "cors";
 import { Low } from "lowdb";
 import { JSONFile } from "lowdb/node";
 
-
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;   // ✅ IMPORTANT
 
 app.use(cors());
 app.use(express.json());
